@@ -1,0 +1,64 @@
+.container-form{
+    margin: 5rem auto;
+    width: 100%;
+}
+
+.form-añadir{
+    width: 40%;
+    margin: 0 auto;
+    padding: 1rem;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.973);
+    border-radius: 10px;
+}
+
+.form-añadir h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.form-añadir input{
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.288);
+    text-align: center;
+}
+
+.form-añadir input::placeholder{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-añadir button{
+    width: 70%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.288);
+    background: rgb(51, 148, 51);
+    color: white;
+}
+
+.form-añadir button:active{
+    transform: scale(0.950)
+}
+
+.imgC{
+    display: none;
+}
+
+.imgComida{
+    background: rgba(196, 196, 196, 0.61);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.397);
+    border-radius: 10px;
+    width: 60%;
+    padding: .5rem;
+    text-align: center;
+}

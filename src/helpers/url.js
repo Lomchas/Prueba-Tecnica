@@ -1,0 +1,1 @@
+export const url = "https://tecnicproofdaniel.herokuapp.com/comidas"
