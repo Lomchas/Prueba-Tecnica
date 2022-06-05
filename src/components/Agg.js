@@ -58,8 +58,8 @@ const handleSubmit = (e) => {
     postData();
     Swal.fire({
         icon: 'success',
-        title: 'Listo',
-        text: 'The sign up its ready',
+        title: 'Already',
+        text: 'The food has been added',
       })
       setComida(initialState)
 }

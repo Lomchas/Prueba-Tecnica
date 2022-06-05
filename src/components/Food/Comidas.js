@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { url } from "../helpers/url";
-import '../Styles/Cards.css'
+import { url } from "../../helpers/url";
+import './comidas.scss'
+import Card from "../CardFood/Card";
 
 
 const Comidas = () => {
@@ -30,25 +31,14 @@ const Comidas = () => {
 
   useEffect(() => {
     getData();
-
-    return () => {};
   }, []);
 
   return(
     <div className="container-cars">
       {
-        comidas.map(element => {
-          return(
-            <div className="comidas-card" key={element.id}>
-              <div className="card-img">
-                <img src={element.imagen} alt="imgComidad" width="100px" height="100px"/>
-              </div>
-              <p className="nombreComida">{element.nombre}</p>
-              <p className="origenComida">{element.origen}</p>
-              <button onClick={() =>deleteFood(element.id)} key={element.id}>Eliminar Comida</button>
-            </div>
-          )
-        })
+        comidas.map((element, index) => (
+          <Card key={index} food={element} functionDelete={deleteFood}/>
+        ))
       }
     </div>
   )
